@@ -57,7 +57,7 @@ select
 
 from access_logs
 group by user_id
-order by unauthorized_records_viewed DESC;
+order by unauthorized_records_viewed desc;
 -- *************************************************************************************************************************************************************
 
 
@@ -188,7 +188,7 @@ order by user_id, access_timestamp;
 -- *************************************************************************************************************************************************************
 -- LD2 - Device Velocity
 -- Flags unusual or rapid device switching relative to normal behavior.
-with ordered_logs AS (
+with ordered_logs as (
     select
         event_id,
         user_id,
@@ -197,7 +197,7 @@ with ordered_logs AS (
         LAG(device_type) over (
             partition by user_id 
             order by access_timestamp
-        ) AS prev_device_type,
+        ) as prev_device_type,
         LAG(access_timestamp) over (
             partition by user_id 
             order by access_timestamp
@@ -241,7 +241,7 @@ select
         
         -- Off-hours check: before 08:00 or after 18:00
         when extract(hour from access_timestamp) < 8 
-          OR extract(hour from access_timestamp) > 18 then TRUE
+          or extract(hour from access_timestamp) > 18 then TRUE
         
         -- Otherwise, normal hours
         else FALSE
