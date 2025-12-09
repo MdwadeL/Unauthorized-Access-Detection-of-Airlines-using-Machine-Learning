@@ -2,30 +2,30 @@
 UNIFIED FEATURE TABLE FOR ACCESS ANOMALY DETECTION
     - Access Velocity (AV1–AV4)
     - Role Violation (RV1)
-    - Location/Device-Based (LD1, LD2)
+    - LOCATION/Device-Based (LD1, LD2)
     - Time-Based (TB1)
 */
 
-WITH
+with
 
 -- *************************************************************************************************************************************************************
 -- AV1 – Access Volume Spike Detection
 -- Detects events where records_viewed is unusually high or low compared to the system-wide baseline (5th and 95th percentile).
-bounds AS (
-    SELECT
-        percentile_cont(0.05) WITHIN GROUP (ORDER BY records_viewed) AS p5,
-        percentile_cont(0.95) WITHIN GROUP (ORDER BY records_viewed) AS p95
-    FROM access_logs
+bounds as (
+    select
+        percentile_cont(0.05) within group (order by records_viewed) as p5,
+        percentile_cont(0.95) within group (order by records_viewed) as p95
+    from access_logs
 ),
-AV1 AS (
-    SELECT
+AV1 as (
+    select
         a.event_id,
-        CASE
-            WHEN a.records_viewed < b.p5 THEN TRUE
-            WHEN a.records_viewed > b.p95 THEN TRUE
-            ELSE FALSE
-        END AS AV1_is_spike
-    FROM access_logs a
+        case
+            when a.records_viewed < b.p5 then TRUE
+            when a.records_viewed > b.p95 then TRUE
+            else FALSE
+        end as AV1isSpike
+    from access_logs a
     CROSS JOIN bounds b
 ),
 -- *************************************************************************************************************************************************************
@@ -34,27 +34,27 @@ AV1 AS (
 -- *************************************************************************************************************************************************************
 -- AV2 – Unauthorized Access Velocity
 -- Measures how many records a user accesses from unauthorized resources.
-AV2 AS (
-    SELECT
+AV2 as (
+    select
         user_id,
-        SUM(records_viewed) AS AV2_total_records,
-        SUM(
-            CASE
-                WHEN is_authorized = 'FALSE' THEN records_viewed
-                ELSE 0
-            END
-        ) AS AV2_unauth_records,
-        CASE
-            WHEN SUM(records_viewed) = 0 THEN 0::numeric
-            ELSE
-                ROUND(
-                    SUM(CASE WHEN is_authorized = 'FALSE' THEN records_viewed ELSE 0 END)::numeric
-                    / SUM(records_viewed)::numeric,
+        sum(records_viewed) as AV2_total_records,
+        sum(
+            case
+                when is_authorized = 'FALSE' then records_viewed
+                else 0
+            end
+        ) as AV2unauthRecords,
+        case
+            when sum(records_viewed) = 0 then 0::numeric
+            else
+                round(
+                    sum(case when is_authorized = 'FALSE' then records_viewed else 0 end)::numeric
+                    / sum(records_viewed)::numeric,
                     3
                 )
-        END AS AV2_unauth_ratio
-    FROM access_logs
-    GROUP BY user_id
+        end as AV2unauthRatio
+    from access_logs
+    group by user_id
 ),
 -- *************************************************************************************************************************************************************
 
@@ -62,27 +62,27 @@ AV2 AS (
 -- *************************************************************************************************************************************************************
 -- AV3 - Sensitive Resource Velocity
 -- Counts how many sensitive resources (resource_sens = TRUE) the user accesses in rapid succession.
-AV3 AS (
-    SELECT
+AV3 as (
+    select
         user_id,
-        SUM(records_viewed) AS AV3_total_records,
-        SUM(
-            CASE
-                WHEN resource_sens = 'TRUE' THEN records_viewed
-                ELSE 0
-            END
-        ) AS AV3_sensitive_records,
-        CASE
-            WHEN SUM(records_viewed) = 0 THEN 0::numeric
-            ELSE
+        sum(records_viewed) as AV3_total_records,
+        sum(
+            case
+                when resource_sens = 'TRUE' then records_viewed
+                else 0
+            end
+        ) as AV3senRecords,
+        case
+            when sum(records_viewed) = 0 then 0::numeric
+            else
                 ROUND(
-                    SUM(CASE WHEN resource_sens = 'TRUE' THEN records_viewed ELSE 0 END)::numeric
-                    / SUM(records_viewed)::numeric,
+                    sum(case when resource_sens = 'TRUE' then records_viewed else 0 end)::numeric
+                    / sum(records_viewed)::numeric,
                     3
                 )
-        END AS AV3_sensitive_ratio
-    FROM access_logs
-    GROUP BY user_id
+        end as AV3senRatio
+    from access_logs
+    group by user_id
 ),
 -- *************************************************************************************************************************************************************
 
@@ -90,18 +90,18 @@ AV3 AS (
 -- *************************************************************************************************************************************************************
 -- AV3 - First-Time Access
 -- Identifies when a user accesses a resource they have never interacted with before.
-AV4 AS (
-    SELECT
+AV4 as (
+    select
         event_id,
-        CASE
-            WHEN ROW_NUMBER() OVER (
-                    PARTITION BY user_id, resource_accessed
-                    ORDER BY access_timestamp
+        case
+            when ROW_NUMBER() over (
+                    partition by user_id, resource_accessed
+                    order by access_timestamp
                  ) = 1
-            THEN TRUE
-            ELSE FALSE
-        END AS AV4_is_first_time
-    FROM access_logs
+            then TRUE
+            else FALSE
+        end as AV4isFirstTime
+    from access_logs
 ),
 -- *************************************************************************************************************************************************************
 
@@ -110,75 +110,75 @@ AV4 AS (
 -- ROLE VIOLATION METHODS
 -- RV1 Abnormal Access
 -- (e.g., pilots reading payroll data)
-RV1 AS (
-    SELECT
+RV1 as (
+    select
         event_id,
-        CASE
+        case
             /* HR allowed */
-            WHEN user_role = 'HR'
-             AND resource_accessed IN ('hr_files', 'payroll_records')
-             AND access_type = 'read'
-            THEN FALSE
+            when user_role = 'HR'
+             and resource_accessed IN ('hr_files', 'payroll_records')
+             and access_type = 'read'
+            then FALSE
 
             /* Customer Service allowed */
-            WHEN user_role = 'Customer Service'
-             AND resource_accessed = 'customer_table'
-            THEN FALSE
+            when user_role = 'Customer Service'
+             and resource_accessed = 'customer_table'
+            then FALSE
 
             /* Finance allowed */
-            WHEN user_role = 'Finance'
-             AND resource_accessed = 'payroll_records'
-            THEN FALSE
+            when user_role = 'Finance'
+             and resource_accessed = 'payroll_records'
+            then FALSE
 
             /* IT allowed everything */
-            WHEN user_role = 'IT'
-            THEN FALSE
+            when user_role = 'IT'
+            then FALSE
 
             /* Pilot allowed */
-            WHEN user_role = 'Pilot'
-             AND resource_accessed IN ('flight_logs', 'maintenance_logs')
-             AND access_type = 'read'
-            THEN FALSE
+            when user_role = 'Pilot'
+             and resource_accessed IN ('flight_logs', 'maintenance_logs')
+             and access_type = 'read'
+            then FALSE
 
             /* Everything else is abnormal */
-            ELSE TRUE
-        END AS RV1_is_role_violation
-    FROM access_logs
+            else TRUE
+        end as RV1isRoleViolate
+    from access_logs
 ),
 -- *************************************************************************************************************************************************************
 
 
 -- *************************************************************************************************************************************************************
--- LOCATION DEVICE-BasED METHODS
--- LD1 - Location Velocity
+-- LOCATION DEVICE-BASED METHODS
+-- LD1 - LOCATION Velocity
 -- Detects rapid or impossible travel scenarios (e.g., two distant logins too close together in time).
-LD1_ordered AS (
-    SELECT
+LD1_ordered as (
+    select
         event_id,
         user_id,
         location,
         access_timestamp,
-        LAG(location) OVER (
-            PARTITION BY user_id
-            ORDER BY access_timestamp
-        ) AS prev_location,
-        LAG(access_timestamp) OVER (
-            PARTITION BY user_id
-            ORDER BY access_timestamp
-        ) AS prev_timestamp
-    FROM access_logs
+        lag(location) over (
+            partition by user_id
+            order by access_timestamp
+        ) as prev_location,
+        lag(access_timestamp) over (
+            partition by user_id
+            order by access_timestamp
+        ) as prev_timestamp
+    from access_logs
 ),
-LD1 AS (
-    SELECT
+LD1 as (
+    select
         event_id,
-        CASE
-            WHEN prev_timestamp IS NULL THEN FALSE
-            WHEN location <> prev_location
-                 AND access_timestamp - prev_timestamp < INTERVAL '2 hours'
-            THEN TRUE
-            ELSE FALSE
-        END AS LD1_impossible_travel
-    FROM LD1_ordered
+        case
+            when prev_timestamp is null then FALSE
+            when location <> prev_location
+                 and access_timestamp - prev_timestamp < INTERVAL '2 hours'
+            then TRUE
+            else FALSE
+        end as LD1isImpossTravel
+    from LD1_ordered
 ),
 -- *************************************************************************************************************************************************************
 
@@ -186,63 +186,63 @@ LD1 AS (
 -- *************************************************************************************************************************************************************
 -- LD2 - Device Velocity
 -- Flags unusual or rapid device switching relative to normal behavior.
-LD2_ordered AS (
-    SELECT
+LD2_ordered as (
+    select
         event_id,
         user_id,
         device_type,
         access_timestamp,
-        LAG(device_type) OVER (
-            PARTITION BY user_id
-            ORDER BY access_timestamp
-        ) AS prev_device_type,
-        LAG(access_timestamp) OVER (
-            PARTITION BY user_id
-            ORDER BY access_timestamp
-        ) AS prev_timestamp
-    FROM access_logs
+        lag(device_type) over (
+            partition by user_id
+            order by access_timestamp
+        ) as prev_device_type,
+        lag(access_timestamp) over (
+            partition by user_id
+            order by access_timestamp
+        ) as prev_timestamp
+    from access_logs
 ),
-LD2 AS (
-    SELECT
+LD2 as (
+    select
         event_id,
-        CASE
-            WHEN prev_timestamp IS NULL THEN FALSE
-            WHEN device_type <> prev_device_type
-                 AND access_timestamp - prev_timestamp <= INTERVAL '30 minutes'
-            THEN TRUE
-            ELSE FALSE
-        END AS LD2_rapid_device_switch
-    FROM LD2_ordered
+        case
+            when prev_timestamp is null then FALSE
+            when device_type <> prev_device_type
+                 and access_timestamp - prev_timestamp <= INTERVAL '30 minutes'
+            then TRUE
+            else FALSE
+        end as LD2isRdswitch
+    from LD2_ordered
 ),
 -- *************************************************************************************************************************************************************
 
 
 -- *************************************************************************************************************************************************************
--- TIME-BASED METHOD
--- TB1 - Off-Hours Velocity
+-- TIME-BasED METHOD
+-- TB1 - Off-hours Velocity
 -- Measures bursts of activity that occur during non-standard times.
-TB1 AS (
-    SELECT
+TB1 as (
+    select
         event_id,
-        CASE
+        case
             /* Weekend: 0 = Sunday, 6 = Saturday */
-            WHEN EXTRACT(DOW FROM access_timestamp) IN (0, 6) THEN TRUE
+            when extract(DOW from access_timestamp) IN (0, 6) then TRUE
 
             /* Before 08:00AM or after 6:00PM on weekdays */
-            WHEN EXTRACT(HOUR FROM access_timestamp) < 8
-              OR EXTRACT(HOUR FROM access_timestamp) > 18
-            THEN TRUE
+            when extract(hour from access_timestamp) < 8
+              OR extract(hour from access_timestamp) > 18
+            then TRUE
 
-            ELSE FALSE
-        END AS TB1_is_off_hours
-    FROM access_logs
+            else FALSE
+        end as TB1isOffHrs
+    from access_logs
 )
 -- *************************************************************************************************************************************************************
 
 
 -- *************************************************************************************************************************************************************
 -- FINAL FEATURE TABLE
-SELECT
+select
     a.event_id,
     a.user_id,
     a.user_role,
@@ -254,29 +254,29 @@ SELECT
     a.records_viewed,
 
     /* Access Velocity Features */
-    AV1.AV1_is_spike,
-    AV2.AV2_unauth_ratio,
-    AV3.AV3_sensitive_ratio,
-    AV4.AV4_is_first_time,
+    AV1.AV1isSpike,
+    AV2.AV2unauthRatio,
+    AV3.AV3senRatio,
+    AV4.AV4isFirstTime,
 
     /* Role Violation Feature */
-    RV1.RV1_is_role_violation,
+    RV1.RV1isRoleViolate,
 
-    /* Location / Device Features */
-    LD1.LD1_impossible_travel,
-    LD2.LD2_rapid_device_switch,
+    /* LOCATION / Device Features */
+    LD1.LD1isImpossTravel,
+    LD2.LD2isRdswitch,
 
     /* Time-Based Feature */
-    TB1.TB1_is_off_hours
+    TB1.TB1isOffHrs
 
-FROM access_logs a
-LEFT JOIN AV1 ON a.event_id = AV1.event_id
-LEFT JOIN AV2 ON a.user_id = AV2.user_id
-LEFT JOIN AV3 ON a.user_id = AV3.user_id
-LEFT JOIN AV4 ON a.event_id = AV4.event_id
-LEFT JOIN RV1 ON a.event_id = RV1.event_id
-LEFT JOIN LD1 ON a.event_id = LD1.event_id
-LEFT JOIN LD2 ON a.event_id = LD2.event_id
-LEFT JOIN TB1 ON a.event_id = TB1.event_id
-ORDER BY a.access_timestamp, a.user_id;
+from access_logs a
+left join AV1 on a.event_id = AV1.event_id
+left join AV2 on a.user_id = AV2.user_id
+left join AV3 on a.user_id = AV3.user_id
+left join AV4 on a.event_id = AV4.event_id
+left join RV1 on a.event_id = RV1.event_id
+left join LD1 on a.event_id = LD1.event_id
+left join LD2 on a.event_id = LD2.event_id
+left join TB1 on a.event_id = TB1.event_id
+order by a.access_timestamp, a.user_id;
 -- *************************************************************************************************************************************************************
