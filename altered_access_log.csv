@@ -1,0 +1,503 @@
+altered_access_log
+access_monitoring_data,,,,,,,,,,,
+event_id,user_id,user_role,resource_accessed,resource_sensitivity,access_timestamp,location,device_type,access_type,records_viewed,is_authorized,is_privacy_violation
+1,1081,HR,customer_table,TRUE,2025-01-13 12:24:00,CA,web_portal,write,64,FALSE,TRUE
+2,1094,HR,hr_files,TRUE,2025-01-04 22:57:00,IL,remote_server,read,45,TRUE,FALSE
+3,1003,HR,payroll_records,TRUE,2025-01-11 14:07:00,IL,laptop,write,69,TRUE,FALSE
+4,1091,Finance,maintenance_logs,FALSE,2025-01-11 00:46:00,FL,mobile,read,95,FALSE,FALSE
+5,1097,IT,maintenance_logs,FALSE,2025-01-16 11:38:00,NY,web_portal,write,42,TRUE,FALSE
+6,1097,Customer Service,customer_table,TRUE,2025-01-05 05:18:00,FL,laptop,export,42,TRUE,FALSE
+7,1044,Finance,flight_logs,FALSE,2025-01-02 23:27:00,FL,laptop,delete,97,FALSE,FALSE
+8,1010,Finance,flight_logs,FALSE,2025-01-29 14:38:00,IL,mobile,write,73,FALSE,FALSE
+9,1090,HR,customer_table,TRUE,2025-01-11 08:55:00,NY,laptop,write,35,FALSE,TRUE
+10,1012,Pilot,flight_logs,FALSE,2025-01-21 15:14:00,NY,web_portal,export,66,TRUE,FALSE
+11,1045,IT,flight_logs,FALSE,2025-01-30 11:49:00,TX,web_portal,write,36,TRUE,FALSE
+12,1020,Pilot,maintenance_logs,FALSE,2025-01-13 06:51:00,IL,web_portal,export,36,TRUE,FALSE
+13,1098,HR,payroll_records,TRUE,2025-01-02 11:03:00,NY,remote_server,export,57,TRUE,FALSE
+14,1008,IT,hr_files,TRUE,2025-01-15 07:42:00,CA,remote_server,delete,7,TRUE,FALSE
+15,1082,Pilot,payroll_records,TRUE,2025-01-13 01:19:00,CA,web_portal,export,1,FALSE,TRUE
+16,1095,Finance,maintenance_logs,FALSE,2025-01-27 13:22:00,FL,mobile,write,33,FALSE,FALSE
+17,1017,Finance,maintenance_logs,FALSE,2025-01-05 03:17:00,TX,laptop,write,19,FALSE,FALSE
+18,1080,IT,maintenance_logs,FALSE,2025-01-28 03:26:00,TX,remote_server,delete,59,TRUE,FALSE
+19,1076,Pilot,hr_files,TRUE,2025-01-12 10:36:00,IL,laptop,read,22,FALSE,TRUE
+20,1087,Finance,flight_logs,FALSE,2025-01-30 04:06:00,NY,laptop,export,7,FALSE,FALSE
+21,1055,IT,maintenance_logs,FALSE,2025-01-01 03:32:00,NY,web_portal,read,93,TRUE,FALSE
+22,1080,Customer Service,hr_files,TRUE,2025-01-28 17:09:00,CA,web_portal,export,43,FALSE,TRUE
+23,1097,IT,hr_files,TRUE,2025-01-25 03:17:00,TX,mobile,delete,52,TRUE,FALSE
+24,1002,HR,flight_logs,FALSE,2025-01-14 23:53:00,CA,laptop,write,7,FALSE,FALSE
+25,1072,HR,customer_table,TRUE,2025-01-23 02:49:00,TX,web_portal,write,33,FALSE,TRUE
+26,1084,Pilot,hr_files,TRUE,2025-01-08 12:21:00,NY,remote_server,write,53,FALSE,TRUE
+27,1069,IT,flight_logs,FALSE,2025-01-19 03:48:00,NY,remote_server,delete,15,TRUE,FALSE
+28,1015,IT,payroll_records,TRUE,2025-01-03 21:56:00,NY,laptop,write,61,FALSE,TRUE
+29,1075,IT,customer_table,TRUE,2025-01-04 05:32:00,TX,web_portal,read,31,TRUE,FALSE
+30,1004,Customer Service,customer_table,TRUE,2025-01-24 09:35:00,CA,mobile,delete,41,TRUE,FALSE
+31,1027,Finance,payroll_records,TRUE,2025-01-26 23:43:00,IL,remote_server,write,31,TRUE,FALSE
+32,1100,Pilot,maintenance_logs,FALSE,2025-01-09 15:58:00,TX,laptop,delete,105,TRUE,FALSE
+33,1045,Pilot,maintenance_logs,FALSE,2025-01-22 06:06:00,TX,laptop,read,49,TRUE,FALSE
+34,1051,Customer Service,customer_table,TRUE,2025-01-12 07:35:00,CA,web_portal,delete,18,TRUE,FALSE
+35,1017,Pilot,payroll_records,TRUE,2025-01-13 16:14:00,FL,web_portal,read,74,FALSE,TRUE
+36,1056,Finance,customer_table,TRUE,2025-01-03 07:15:00,IL,laptop,read,13,TRUE,FALSE
+37,1096,IT,payroll_records,TRUE,2025-01-19 11:54:00,FL,remote_server,write,56,FALSE,TRUE
+38,1051,HR,payroll_records,TRUE,2025-01-18 05:56:00,TX,remote_server,export,8,TRUE,FALSE
+39,1100,Pilot,flight_logs,FALSE,2025-01-20 06:02:00,IL,remote_server,write,10,TRUE,FALSE
+40,1024,Customer Service,payroll_records,TRUE,2025-01-03 15:52:00,IL,laptop,export,55,FALSE,TRUE
+41,1007,HR,hr_files,TRUE,2025-01-22 16:46:00,IL,web_portal,read,72,TRUE,FALSE
+42,1065,HR,payroll_records,TRUE,2025-01-04 02:50:00,IL,laptop,write,55,TRUE,FALSE
+43,1051,HR,hr_files,TRUE,2025-01-12 04:55:00,IL,laptop,read,46,TRUE,FALSE
+44,1053,Finance,hr_files,TRUE,2025-01-24 19:01:00,NY,mobile,write,40,FALSE,TRUE
+45,1085,Customer Service,payroll_records,TRUE,2025-01-13 02:07:00,FL,web_portal,export,5,FALSE,TRUE
+46,1058,Customer Service,customer_table,TRUE,2025-01-01 10:10:00,FL,laptop,read,28,TRUE,FALSE
+47,1068,IT,hr_files,TRUE,2025-01-13 01:40:00,CA,mobile,read,36,TRUE,FALSE
+48,1031,Customer Service,flight_logs,FALSE,2025-01-08 04:18:00,FL,mobile,read,81,TRUE,FALSE
+49,1085,Finance,flight_logs,FALSE,2025-01-05 17:08:00,CA,mobile,read,60,FALSE,FALSE
+50,1013,Finance,payroll_records,TRUE,2025-01-13 09:28:00,NY,web_portal,export,2,TRUE,FALSE
+51,1026,Customer Service,hr_files,TRUE,2025-01-23 05:36:00,NY,laptop,read,59,FALSE,TRUE
+52,1081,Pilot,flight_logs,FALSE,2025-01-03 00:09:00,TX,mobile,write,38,TRUE,FALSE
+53,1081,Customer Service,payroll_records,TRUE,2025-01-21 02:36:00,IL,remote_server,read,29,FALSE,TRUE
+54,1014,HR,payroll_records,TRUE,2025-01-25 19:55:00,TX,mobile,write,68,TRUE,FALSE
+55,1055,IT,customer_table,TRUE,2025-01-15 00:42:00,NY,laptop,export,80,TRUE,FALSE
+56,1026,IT,customer_table,TRUE,2025-01-17 02:18:00,IL,remote_server,write,77,TRUE,FALSE
+57,1030,IT,payroll_records,TRUE,2025-01-19 18:20:00,TX,web_portal,export,24,FALSE,TRUE
+58,1100,Pilot,payroll_records,TRUE,2025-01-13 03:25:00,CA,laptop,delete,40,FALSE,TRUE
+59,1004,Pilot,payroll_records,TRUE,2025-01-10 01:59:00,FL,mobile,export,59,FALSE,TRUE
+60,1029,IT,customer_table,TRUE,2025-01-09 18:56:00,FL,mobile,export,79,TRUE,FALSE
+61,1008,Customer Service,flight_logs,FALSE,2025-01-30 04:40:00,IL,remote_server,export,35,TRUE,FALSE
+62,1003,HR,flight_logs,FALSE,2025-01-09 03:02:00,IL,mobile,read,44,FALSE,FALSE
+63,1013,Finance,maintenance_logs,FALSE,2025-01-16 17:34:00,NY,remote_server,read,16,FALSE,FALSE
+64,1049,Finance,payroll_records,TRUE,2025-01-12 14:13:00,TX,remote_server,read,14,TRUE,FALSE
+65,1066,Finance,payroll_records,TRUE,2025-01-17 13:49:00,FL,laptop,export,74,TRUE,FALSE
+66,1079,Customer Service,customer_table,TRUE,2025-01-14 16:01:00,IL,mobile,delete,90,TRUE,FALSE
+67,1041,Pilot,flight_logs,FALSE,2025-01-26 05:33:00,CA,web_portal,delete,47,TRUE,FALSE
+68,1085,Pilot,payroll_records,TRUE,2025-01-29 00:18:00,IL,mobile,delete,80,FALSE,TRUE
+69,1070,HR,flight_logs,FALSE,2025-01-14 01:23:00,CA,remote_server,export,60,FALSE,FALSE
+70,1059,Pilot,maintenance_logs,FALSE,2025-01-10 17:25:00,IL,remote_server,write,30,TRUE,FALSE
+71,1084,HR,flight_logs,FALSE,2025-01-24 11:00:00,IL,mobile,read,60,FALSE,FALSE
+72,1096,IT,flight_logs,FALSE,2025-01-11 05:22:00,CA,web_portal,read,96,TRUE,FALSE
+73,1005,IT,maintenance_logs,FALSE,2025-01-28 19:40:00,TX,remote_server,delete,48,TRUE,FALSE
+74,1080,Finance,payroll_records,TRUE,2025-01-18 11:24:00,FL,remote_server,write,96,TRUE,FALSE
+75,1018,HR,customer_table,TRUE,2025-01-20 08:22:00,CA,web_portal,delete,28,FALSE,TRUE
+76,1006,Finance,payroll_records,TRUE,2025-01-06 12:33:00,FL,web_portal,delete,74,TRUE,FALSE
+77,1085,Finance,hr_files,TRUE,2025-01-28 02:23:00,NY,remote_server,delete,52,FALSE,TRUE
+78,1070,Pilot,payroll_records,TRUE,2025-01-22 14:28:00,FL,mobile,write,41,FALSE,TRUE
+79,1081,Customer Service,hr_files,TRUE,2025-01-23 01:18:00,CA,mobile,delete,52,FALSE,TRUE
+80,1009,Customer Service,payroll_records,TRUE,2025-01-13 08:47:00,NY,mobile,read,9,FALSE,TRUE
+81,1017,IT,payroll_records,TRUE,2025-01-18 10:22:00,CA,web_portal,read,43,FALSE,TRUE
+82,1053,Pilot,flight_logs,FALSE,2025-01-25 16:40:00,FL,remote_server,read,60,TRUE,FALSE
+83,1026,Pilot,maintenance_logs,FALSE,2025-01-27 13:58:00,TX,remote_server,delete,94,TRUE,FALSE
+84,1000,Customer Service,flight_logs,FALSE,2025-01-18 17:58:00,FL,web_portal,delete,34,TRUE,FALSE
+85,1028,Customer Service,maintenance_logs,FALSE,2025-01-23 02:27:00,TX,remote_server,export,25,FALSE,FALSE
+86,1085,Pilot,payroll_records,TRUE,2025-01-22 06:30:00,CA,laptop,delete,34,FALSE,TRUE
+87,1075,Finance,customer_table,TRUE,2025-01-04 19:41:00,FL,web_portal,delete,77,TRUE,FALSE
+88,1023,HR,flight_logs,FALSE,2025-01-18 06:04:00,NY,web_portal,delete,59,FALSE,FALSE
+89,1041,Customer Service,maintenance_logs,FALSE,2025-01-13 15:55:00,FL,mobile,read,34,FALSE,FALSE
+90,1060,HR,hr_files,TRUE,2025-01-03 08:53:00,NY,web_portal,read,65,TRUE,FALSE
+91,1099,HR,customer_table,TRUE,2025-01-12 06:05:00,CA,laptop,write,52,FALSE,TRUE
+92,1030,IT,maintenance_logs,FALSE,2025-01-06 04:56:00,IL,web_portal,delete,79,TRUE,FALSE
+93,1089,Customer Service,flight_logs,FALSE,2025-01-08 15:16:00,IL,laptop,write,28,TRUE,FALSE
+94,1039,HR,hr_files,TRUE,2025-01-02 04:02:00,NY,remote_server,delete,40,TRUE,FALSE
+95,1091,IT,customer_table,TRUE,2025-01-27 22:43:00,CA,laptop,export,38,TRUE,FALSE
+96,1087,Finance,customer_table,TRUE,2025-01-26 18:08:00,TX,mobile,delete,6,TRUE,FALSE
+97,1084,Customer Service,customer_table,TRUE,2025-01-24 00:38:00,NY,laptop,delete,58,TRUE,FALSE
+98,1062,HR,maintenance_logs,FALSE,2025-01-17 11:36:00,FL,web_portal,delete,57,FALSE,FALSE
+99,1022,Finance,flight_logs,FALSE,2025-01-29 00:44:00,IL,remote_server,delete,50,FALSE,FALSE
+100,1055,Finance,flight_logs,FALSE,2025-01-15 16:02:00,CA,laptop,export,42,FALSE,FALSE
+101,1057,IT,maintenance_logs,FALSE,2025-01-26 22:25:00,IL,remote_server,export,7,TRUE,FALSE
+102,1003,Pilot,flight_logs,FALSE,2025-01-09 06:37:00,FL,web_portal,export,37,TRUE,FALSE
+103,1033,Customer Service,flight_logs,FALSE,2025-01-28 03:09:00,NY,laptop,write,39,TRUE,FALSE
+104,1010,IT,maintenance_logs,FALSE,2025-01-23 05:39:00,IL,web_portal,delete,25,TRUE,FALSE
+105,1082,Pilot,maintenance_logs,FALSE,2025-01-01 18:50:00,TX,mobile,write,45,TRUE,FALSE
+106,1051,IT,flight_logs,FALSE,2025-01-27 11:12:00,NY,remote_server,export,62,TRUE,FALSE
+107,1054,Finance,flight_logs,FALSE,2025-01-17 00:16:00,FL,mobile,export,106,FALSE,FALSE
+108,1032,IT,customer_table,TRUE,2025-01-09 18:21:00,NY,laptop,write,55,TRUE,FALSE
+109,1024,IT,maintenance_logs,FALSE,2025-01-13 14:00:00,IL,mobile,read,57,TRUE,FALSE
+110,1024,Customer Service,payroll_records,TRUE,2025-01-17 10:10:00,CA,mobile,read,47,FALSE,TRUE
+111,1090,Finance,payroll_records,TRUE,2025-01-13 11:37:00,TX,laptop,export,7,TRUE,FALSE
+112,1089,IT,maintenance_logs,FALSE,2025-01-05 16:03:00,TX,mobile,delete,49,TRUE,FALSE
+113,1061,Pilot,flight_logs,FALSE,2025-01-09 09:22:00,TX,mobile,delete,51,TRUE,FALSE
+114,1014,HR,maintenance_logs,FALSE,2025-01-23 09:07:00,TX,laptop,write,123,FALSE,FALSE
+115,1019,Finance,flight_logs,FALSE,2025-01-04 21:02:00,CA,laptop,delete,44,FALSE,FALSE
+116,1077,Finance,hr_files,TRUE,2025-01-11 06:30:00,IL,remote_server,delete,59,FALSE,TRUE
+117,1056,Customer Service,hr_files,TRUE,2025-01-20 12:23:00,NY,laptop,read,48,FALSE,TRUE
+118,1097,IT,payroll_records,TRUE,2025-01-13 01:03:00,TX,web_portal,write,14,FALSE,TRUE
+119,1022,Finance,customer_table,TRUE,2025-01-08 02:58:00,TX,remote_server,delete,84,TRUE,FALSE
+120,1088,Finance,maintenance_logs,FALSE,2025-01-14 06:07:00,TX,web_portal,export,72,FALSE,FALSE
+121,1090,Customer Service,maintenance_logs,FALSE,2025-01-04 05:44:00,CA,mobile,write,73,FALSE,FALSE
+122,1054,HR,hr_files,TRUE,2025-01-11 05:33:00,CA,mobile,write,22,TRUE,FALSE
+123,1009,HR,payroll_records,TRUE,2025-01-14 23:59:00,IL,mobile,delete,92,TRUE,FALSE
+124,1015,Pilot,flight_logs,FALSE,2025-01-19 07:38:00,NY,remote_server,delete,7,TRUE,FALSE
+125,1010,Finance,customer_table,TRUE,2025-01-20 15:53:00,NY,mobile,read,67,TRUE,FALSE
+126,1011,IT,hr_files,TRUE,2025-01-27 17:17:00,TX,mobile,read,115,TRUE,FALSE
+127,1097,IT,maintenance_logs,FALSE,2025-01-24 14:50:00,FL,mobile,write,20,TRUE,FALSE
+128,1074,Pilot,maintenance_logs,FALSE,2025-01-05 03:39:00,FL,mobile,delete,33,TRUE,FALSE
+129,1042,Customer Service,customer_table,TRUE,2025-01-08 07:39:00,NY,remote_server,delete,52,TRUE,FALSE
+130,1036,Pilot,hr_files,TRUE,2025-01-02 16:04:00,FL,laptop,export,34,FALSE,TRUE
+131,1032,Customer Service,customer_table,TRUE,2025-01-19 09:28:00,IL,laptop,delete,3,TRUE,FALSE
+132,1052,HR,payroll_records,TRUE,2025-01-24 14:16:00,NY,remote_server,delete,52,TRUE,FALSE
+133,1097,HR,payroll_records,TRUE,2025-01-13 03:41:00,IL,web_portal,export,18,TRUE,FALSE
+134,1056,Pilot,customer_table,TRUE,2025-01-02 07:31:00,IL,web_portal,write,64,FALSE,TRUE
+135,1039,Finance,customer_table,TRUE,2025-01-26 03:12:00,FL,laptop,write,22,TRUE,FALSE
+136,1014,Pilot,customer_table,TRUE,2025-01-30 11:28:00,CA,remote_server,export,96,FALSE,TRUE
+137,1065,Customer Service,maintenance_logs,FALSE,2025-01-22 23:01:00,FL,web_portal,delete,26,FALSE,FALSE
+138,1070,IT,maintenance_logs,FALSE,2025-01-09 16:11:00,IL,web_portal,read,40,TRUE,FALSE
+139,1035,Pilot,flight_logs,FALSE,2025-01-24 02:35:00,NY,laptop,export,74,TRUE,FALSE
+140,1092,Customer Service,hr_files,TRUE,2025-01-27 09:25:00,FL,web_portal,delete,13,FALSE,TRUE
+141,1068,Pilot,flight_logs,FALSE,2025-01-16 03:06:00,IL,remote_server,delete,56,TRUE,FALSE
+142,1041,IT,payroll_records,TRUE,2025-01-27 00:33:00,FL,web_portal,delete,89,FALSE,TRUE
+143,1005,Customer Service,maintenance_logs,FALSE,2025-01-18 08:24:00,FL,web_portal,delete,1,FALSE,FALSE
+144,1004,IT,hr_files,TRUE,2025-01-27 20:38:00,NY,laptop,delete,55,TRUE,FALSE
+145,1012,Finance,maintenance_logs,FALSE,2025-01-01 16:45:00,CA,remote_server,write,57,FALSE,FALSE
+146,1009,Pilot,flight_logs,FALSE,2025-01-16 09:47:00,IL,remote_server,read,73,TRUE,FALSE
+147,1042,Finance,maintenance_logs,FALSE,2025-01-15 09:52:00,FL,laptop,read,12,FALSE,FALSE
+148,1030,Customer Service,payroll_records,TRUE,2025-01-05 02:43:00,FL,laptop,read,10,FALSE,TRUE
+149,1056,IT,flight_logs,FALSE,2025-01-02 07:37:00,TX,mobile,read,65,TRUE,FALSE
+150,1037,Customer Service,flight_logs,FALSE,2025-01-20 14:25:00,CA,web_portal,delete,58,TRUE,FALSE
+151,1072,IT,payroll_records,TRUE,2025-01-08 23:13:00,TX,remote_server,write,57,FALSE,TRUE
+152,1063,Finance,payroll_records,TRUE,2025-01-11 13:36:00,FL,mobile,delete,60,TRUE,FALSE
+153,1032,HR,maintenance_logs,FALSE,2025-01-14 02:10:00,IL,web_portal,read,29,FALSE,FALSE
+154,1056,Customer Service,hr_files,TRUE,2025-01-14 14:45:00,FL,mobile,delete,56,FALSE,TRUE
+155,1038,IT,maintenance_logs,FALSE,2025-01-22 23:47:00,TX,web_portal,delete,58,TRUE,FALSE
+156,1073,Customer Service,hr_files,TRUE,2025-01-14 11:10:00,NY,laptop,delete,28,FALSE,TRUE
+157,1035,HR,hr_files,TRUE,2025-01-03 05:34:00,IL,remote_server,export,105,TRUE,FALSE
+158,1099,IT,hr_files,TRUE,2025-01-17 00:49:00,CA,web_portal,export,64,TRUE,FALSE
+159,1086,IT,customer_table,TRUE,2025-01-29 13:21:00,TX,mobile,delete,14,TRUE,FALSE
+160,1004,Finance,flight_logs,FALSE,2025-01-06 23:32:00,TX,mobile,export,69,FALSE,FALSE
+161,1095,Pilot,payroll_records,TRUE,2025-01-10 03:19:00,CA,mobile,export,20,FALSE,TRUE
+162,1021,Customer Service,maintenance_logs,FALSE,2025-01-14 10:22:00,NY,laptop,delete,73,FALSE,FALSE
+163,1009,IT,payroll_records,TRUE,2025-01-19 02:04:00,IL,mobile,read,84,FALSE,TRUE
+164,1050,HR,flight_logs,FALSE,2025-01-25 10:04:00,TX,remote_server,export,25,FALSE,FALSE
+165,1086,Customer Service,hr_files,TRUE,2025-01-18 08:10:00,NY,laptop,write,78,FALSE,TRUE
+166,1060,HR,hr_files,TRUE,2025-01-26 13:12:00,NY,web_portal,read,62,TRUE,FALSE
+167,1081,Pilot,flight_logs,FALSE,2025-01-30 13:08:00,FL,laptop,write,74,TRUE,FALSE
+168,1005,HR,flight_logs,FALSE,2025-01-23 10:04:00,TX,laptop,write,106,FALSE,FALSE
+169,1068,IT,maintenance_logs,FALSE,2025-01-21 15:29:00,NY,remote_server,write,42,TRUE,FALSE
+170,1053,HR,maintenance_logs,FALSE,2025-01-29 00:27:00,FL,mobile,read,27,FALSE,FALSE
+171,1088,Customer Service,payroll_records,TRUE,2025-01-21 04:17:00,FL,web_portal,export,23,FALSE,TRUE
+172,1012,Customer Service,hr_files,TRUE,2025-01-30 08:19:00,NY,laptop,delete,25,FALSE,TRUE
+173,1035,IT,customer_table,TRUE,2025-01-21 16:40:00,TX,web_portal,read,47,TRUE,FALSE
+174,1006,Customer Service,payroll_records,TRUE,2025-01-06 17:32:00,IL,web_portal,read,60,FALSE,TRUE
+175,1097,Finance,payroll_records,TRUE,2025-01-27 16:29:00,CA,web_portal,export,58,TRUE,FALSE
+176,1099,IT,hr_files,TRUE,2025-01-01 03:05:00,NY,web_portal,write,74,TRUE,FALSE
+177,1069,Customer Service,payroll_records,TRUE,2025-01-06 00:04:00,TX,web_portal,read,50,FALSE,TRUE
+178,1045,IT,hr_files,TRUE,2025-01-15 17:38:00,TX,web_portal,export,93,TRUE,FALSE
+179,1006,IT,maintenance_logs,FALSE,2025-01-24 22:37:00,TX,laptop,delete,42,TRUE,FALSE
+180,1057,Customer Service,hr_files,TRUE,2025-01-28 00:26:00,TX,remote_server,write,131,FALSE,TRUE
+181,1078,HR,hr_files,TRUE,2025-01-14 17:27:00,FL,laptop,read,68,TRUE,FALSE
+182,1061,Pilot,maintenance_logs,FALSE,2025-01-05 21:55:00,FL,remote_server,read,24,TRUE,FALSE
+183,1010,Customer Service,hr_files,TRUE,2025-01-07 18:01:00,TX,web_portal,export,17,FALSE,TRUE
+184,1079,Finance,hr_files,TRUE,2025-01-15 19:11:00,FL,mobile,delete,64,FALSE,TRUE
+185,1064,Finance,maintenance_logs,FALSE,2025-01-05 12:19:00,TX,web_portal,delete,43,FALSE,FALSE
+186,1057,IT,maintenance_logs,FALSE,2025-01-16 10:12:00,FL,remote_server,delete,71,TRUE,FALSE
+187,1093,HR,flight_logs,FALSE,2025-01-20 10:08:00,NY,mobile,export,64,FALSE,FALSE
+188,1019,Pilot,customer_table,TRUE,2025-01-05 03:38:00,TX,laptop,delete,47,FALSE,TRUE
+189,1012,Customer Service,payroll_records,TRUE,2025-01-26 07:42:00,TX,mobile,read,24,FALSE,TRUE
+190,1052,Customer Service,maintenance_logs,FALSE,2025-01-03 08:11:00,NY,mobile,export,4,FALSE,FALSE
+191,1013,Finance,hr_files,TRUE,2025-01-10 16:22:00,CA,remote_server,write,36,FALSE,TRUE
+192,1013,Customer Service,hr_files,TRUE,2025-01-17 17:28:00,TX,mobile,write,75,FALSE,TRUE
+193,1054,Finance,hr_files,TRUE,2025-01-28 22:11:00,IL,laptop,export,56,FALSE,TRUE
+194,1003,IT,flight_logs,FALSE,2025-01-15 01:29:00,NY,mobile,read,12,TRUE,FALSE
+195,1023,IT,hr_files,TRUE,2025-01-30 21:59:00,FL,laptop,write,55,TRUE,FALSE
+196,1094,HR,customer_table,TRUE,2025-01-25 03:25:00,CA,remote_server,delete,61,FALSE,TRUE
+197,1058,Customer Service,payroll_records,TRUE,2025-01-17 20:11:00,NY,mobile,read,23,FALSE,TRUE
+198,1006,IT,payroll_records,TRUE,2025-01-29 02:50:00,TX,laptop,export,54,FALSE,TRUE
+199,1056,Pilot,maintenance_logs,FALSE,2025-01-28 15:05:00,FL,remote_server,export,51,TRUE,FALSE
+200,1027,Finance,customer_table,TRUE,2025-01-16 17:01:00,FL,laptop,export,15,TRUE,FALSE
+201,1086,Finance,maintenance_logs,FALSE,2025-01-24 23:33:00,NY,laptop,write,60,FALSE,FALSE
+202,1050,Finance,customer_table,TRUE,2025-01-01 08:23:00,CA,mobile,write,66,TRUE,FALSE
+203,1098,IT,flight_logs,FALSE,2025-01-14 04:09:00,NY,laptop,read,82,TRUE,FALSE
+204,1063,Pilot,payroll_records,TRUE,2025-01-06 21:06:00,FL,web_portal,export,81,FALSE,TRUE
+205,1009,Pilot,customer_table,TRUE,2025-01-20 20:28:00,TX,remote_server,read,8,FALSE,TRUE
+206,1040,Finance,maintenance_logs,FALSE,2025-01-27 02:18:00,FL,remote_server,export,21,FALSE,FALSE
+207,1014,Pilot,customer_table,TRUE,2025-01-15 18:44:00,CA,remote_server,export,65,FALSE,TRUE
+208,1011,Pilot,customer_table,TRUE,2025-01-12 01:45:00,FL,remote_server,read,65,FALSE,TRUE
+209,1050,Customer Service,flight_logs,FALSE,2025-01-11 02:00:00,NY,web_portal,read,65,TRUE,FALSE
+210,1065,HR,hr_files,TRUE,2025-01-24 05:00:00,CA,mobile,export,165,TRUE,FALSE
+211,1093,IT,payroll_records,TRUE,2025-01-05 16:17:00,CA,mobile,write,67,FALSE,TRUE
+212,1022,Finance,payroll_records,TRUE,2025-01-30 19:59:00,TX,web_portal,delete,84,TRUE,FALSE
+213,1059,Finance,hr_files,TRUE,2025-01-21 10:19:00,IL,mobile,export,78,FALSE,TRUE
+214,1019,Pilot,customer_table,TRUE,2025-01-22 08:11:00,FL,mobile,export,69,FALSE,TRUE
+215,1075,HR,flight_logs,FALSE,2025-01-24 02:08:00,TX,mobile,delete,40,FALSE,FALSE
+216,1057,HR,customer_table,TRUE,2025-01-17 18:45:00,NY,laptop,read,72,FALSE,TRUE
+217,1078,Finance,hr_files,TRUE,2025-01-18 11:57:00,FL,laptop,delete,26,FALSE,TRUE
+218,1073,IT,flight_logs,FALSE,2025-01-28 12:49:00,FL,web_portal,read,42,TRUE,FALSE
+219,1057,HR,flight_logs,FALSE,2025-01-04 20:06:00,IL,web_portal,read,35,FALSE,FALSE
+220,1031,Pilot,maintenance_logs,FALSE,2025-01-24 20:25:00,IL,web_portal,export,52,TRUE,FALSE
+221,1047,Customer Service,maintenance_logs,FALSE,2025-01-19 14:29:00,NY,laptop,export,119,FALSE,FALSE
+222,1008,Customer Service,customer_table,TRUE,2025-01-26 09:26:00,FL,mobile,export,6,TRUE,FALSE
+223,1092,Finance,payroll_records,TRUE,2025-01-16 04:07:00,TX,web_portal,export,70,TRUE,FALSE
+224,1039,Pilot,payroll_records,TRUE,2025-01-28 01:56:00,TX,mobile,delete,1,FALSE,TRUE
+225,1082,Customer Service,payroll_records,TRUE,2025-01-24 22:57:00,TX,remote_server,export,35,FALSE,TRUE
+226,1002,Customer Service,flight_logs,FALSE,2025-01-09 04:53:00,CA,mobile,delete,82,TRUE,FALSE
+227,1024,IT,payroll_records,TRUE,2025-01-08 01:14:00,TX,mobile,read,51,FALSE,TRUE
+228,1064,Finance,hr_files,TRUE,2025-01-02 17:13:00,NY,web_portal,delete,17,FALSE,TRUE
+229,1019,IT,payroll_records,TRUE,2025-01-29 10:22:00,CA,remote_server,read,28,FALSE,TRUE
+230,1052,Customer Service,payroll_records,TRUE,2025-01-21 05:11:00,IL,mobile,delete,70,FALSE,TRUE
+231,1029,Finance,payroll_records,TRUE,2025-01-15 02:01:00,FL,web_portal,export,28,TRUE,FALSE
+232,1086,Finance,maintenance_logs,FALSE,2025-01-22 00:16:00,NY,remote_server,delete,56,FALSE,FALSE
+233,1020,IT,hr_files,TRUE,2025-01-07 07:10:00,NY,laptop,delete,51,TRUE,FALSE
+234,1047,Finance,customer_table,TRUE,2025-01-24 11:30:00,TX,mobile,read,30,TRUE,FALSE
+235,1097,IT,flight_logs,FALSE,2025-01-21 10:46:00,IL,web_portal,delete,114,TRUE,FALSE
+236,1011,IT,maintenance_logs,FALSE,2025-01-16 21:50:00,TX,remote_server,read,69,TRUE,FALSE
+237,1050,Finance,flight_logs,FALSE,2025-01-11 17:31:00,FL,laptop,export,10,FALSE,FALSE
+238,1028,HR,flight_logs,FALSE,2025-01-05 12:13:00,NY,web_portal,write,55,FALSE,FALSE
+239,1004,Customer Service,maintenance_logs,FALSE,2025-01-07 07:35:00,FL,remote_server,read,30,FALSE,FALSE
+240,1010,HR,flight_logs,FALSE,2025-01-10 19:33:00,CA,remote_server,read,75,FALSE,FALSE
+241,1099,Customer Service,payroll_records,TRUE,2025-01-14 16:56:00,TX,laptop,write,26,FALSE,TRUE
+242,1053,Finance,maintenance_logs,FALSE,2025-01-03 20:36:00,TX,remote_server,read,46,FALSE,FALSE
+243,1080,Finance,hr_files,TRUE,2025-01-12 00:15:00,CA,mobile,delete,65,FALSE,TRUE
+244,1000,Finance,flight_logs,FALSE,2025-01-11 22:45:00,IL,remote_server,write,75,FALSE,FALSE
+245,1085,HR,hr_files,TRUE,2025-01-17 09:52:00,TX,laptop,delete,13,TRUE,FALSE
+246,1060,HR,maintenance_logs,FALSE,2025-01-17 23:44:00,NY,laptop,export,39,FALSE,FALSE
+247,1100,HR,flight_logs,FALSE,2025-01-11 23:22:00,TX,mobile,write,35,FALSE,FALSE
+248,1005,Customer Service,hr_files,TRUE,2025-01-16 09:47:00,CA,remote_server,delete,30,FALSE,TRUE
+249,1080,IT,payroll_records,TRUE,2025-01-03 20:55:00,FL,laptop,export,102,FALSE,TRUE
+250,1025,HR,payroll_records,TRUE,2025-01-02 21:46:00,NY,mobile,delete,62,TRUE,FALSE
+251,1069,Pilot,flight_logs,FALSE,2025-01-02 15:59:00,CA,mobile,export,12,TRUE,FALSE
+252,1099,HR,flight_logs,FALSE,2025-01-13 10:25:00,TX,mobile,delete,77,FALSE,FALSE
+253,1051,Pilot,maintenance_logs,FALSE,2025-01-16 10:19:00,CA,remote_server,delete,113,TRUE,FALSE
+254,1047,Finance,flight_logs,FALSE,2025-01-04 18:14:00,FL,laptop,delete,80,FALSE,FALSE
+255,1077,IT,hr_files,TRUE,2025-01-14 08:52:00,NY,laptop,read,4,TRUE,FALSE
+256,1041,Customer Service,flight_logs,FALSE,2025-01-21 07:03:00,IL,remote_server,write,35,TRUE,FALSE
+257,1088,Pilot,flight_logs,FALSE,2025-01-21 08:23:00,TX,mobile,delete,88,TRUE,FALSE
+258,1035,HR,customer_table,TRUE,2025-01-30 00:20:00,FL,mobile,write,28,FALSE,TRUE
+259,1003,IT,hr_files,TRUE,2025-01-20 22:36:00,TX,web_portal,read,63,TRUE,FALSE
+260,1030,Customer Service,flight_logs,FALSE,2025-01-18 10:10:00,IL,laptop,write,73,TRUE,FALSE
+261,1086,Pilot,flight_logs,FALSE,2025-01-17 22:20:00,FL,laptop,write,22,TRUE,FALSE
+262,1067,Customer Service,maintenance_logs,FALSE,2025-01-15 07:23:00,NY,web_portal,read,48,FALSE,FALSE
+263,1003,IT,maintenance_logs,FALSE,2025-01-24 13:30:00,FL,laptop,export,47,TRUE,FALSE
+264,1099,Customer Service,maintenance_logs,FALSE,2025-01-10 18:22:00,IL,mobile,delete,19,FALSE,FALSE
+265,1025,HR,payroll_records,TRUE,2025-01-04 08:53:00,FL,web_portal,delete,42,TRUE,FALSE
+266,1011,Customer Service,flight_logs,FALSE,2025-01-03 22:55:00,IL,mobile,export,12,TRUE,FALSE
+267,1020,IT,flight_logs,FALSE,2025-01-24 03:41:00,CA,laptop,write,98,TRUE,FALSE
+268,1017,IT,maintenance_logs,FALSE,2025-01-02 04:42:00,NY,mobile,delete,7,TRUE,FALSE
+269,1070,IT,hr_files,TRUE,2025-01-04 22:10:00,TX,mobile,delete,36,TRUE,FALSE
+270,1091,Pilot,hr_files,TRUE,2025-01-19 16:41:00,FL,laptop,write,53,FALSE,TRUE
+271,1040,HR,maintenance_logs,FALSE,2025-01-22 04:48:00,IL,mobile,write,93,FALSE,FALSE
+272,1099,Finance,hr_files,TRUE,2025-01-09 06:45:00,CA,remote_server,read,6,FALSE,TRUE
+273,1015,Finance,payroll_records,TRUE,2025-01-14 20:11:00,CA,web_portal,export,84,TRUE,FALSE
+274,1090,IT,flight_logs,FALSE,2025-01-24 14:46:00,NY,laptop,export,50,TRUE,FALSE
+275,1025,Finance,flight_logs,FALSE,2025-01-06 16:43:00,NY,laptop,write,20,FALSE,FALSE
+276,1075,Finance,payroll_records,TRUE,2025-01-08 18:59:00,IL,mobile,read,63,TRUE,FALSE
+277,1003,HR,customer_table,TRUE,2025-01-30 04:38:00,IL,mobile,write,55,FALSE,TRUE
+278,1098,Finance,maintenance_logs,FALSE,2025-01-29 03:08:00,TX,remote_server,export,31,FALSE,FALSE
+279,1082,Customer Service,maintenance_logs,FALSE,2025-01-12 03:28:00,FL,mobile,delete,52,FALSE,FALSE
+280,1009,HR,payroll_records,TRUE,2025-01-21 00:09:00,FL,remote_server,delete,38,TRUE,FALSE
+281,1026,Customer Service,hr_files,TRUE,2025-01-07 12:55:00,NY,mobile,export,53,FALSE,TRUE
+282,1051,IT,flight_logs,FALSE,2025-01-24 10:29:00,IL,laptop,export,69,TRUE,FALSE
+283,1030,Pilot,customer_table,TRUE,2025-01-13 04:09:00,FL,web_portal,write,97,FALSE,TRUE
+284,1012,HR,flight_logs,FALSE,2025-01-18 11:35:00,IL,remote_server,write,12,FALSE,FALSE
+285,1020,Customer Service,hr_files,TRUE,2025-01-15 05:34:00,CA,web_portal,delete,113,FALSE,TRUE
+286,1065,Pilot,maintenance_logs,FALSE,2025-01-15 01:00:00,FL,laptop,read,8,TRUE,FALSE
+287,1050,Finance,maintenance_logs,FALSE,2025-01-11 22:56:00,CA,mobile,read,45,FALSE,FALSE
+288,1006,Customer Service,maintenance_logs,FALSE,2025-01-28 04:38:00,FL,mobile,read,67,FALSE,FALSE
+289,1013,Pilot,payroll_records,TRUE,2025-01-13 00:52:00,NY,remote_server,export,58,FALSE,TRUE
+290,1005,Pilot,customer_table,TRUE,2025-01-26 22:53:00,IL,web_portal,export,31,FALSE,TRUE
+291,1070,Customer Service,customer_table,TRUE,2025-01-18 13:59:00,IL,remote_server,export,43,TRUE,FALSE
+292,1079,Finance,customer_table,TRUE,2025-01-06 20:32:00,TX,remote_server,export,35,TRUE,FALSE
+293,1043,Finance,flight_logs,FALSE,2025-01-07 13:34:00,CA,remote_server,read,32,FALSE,FALSE
+294,1005,HR,payroll_records,TRUE,2025-01-16 03:46:00,FL,remote_server,write,75,TRUE,FALSE
+295,1077,Finance,payroll_records,TRUE,2025-01-15 22:13:00,IL,mobile,write,60,TRUE,FALSE
+296,1050,Finance,flight_logs,FALSE,2025-01-28 00:30:00,NY,remote_server,export,29,FALSE,FALSE
+297,1060,HR,flight_logs,FALSE,2025-01-16 01:48:00,TX,remote_server,export,76,FALSE,FALSE
+298,1092,HR,hr_files,TRUE,2025-01-22 14:22:00,NY,web_portal,read,59,TRUE,FALSE
+299,1074,Pilot,payroll_records,TRUE,2025-01-24 20:36:00,IL,remote_server,write,74,FALSE,TRUE
+300,1087,IT,customer_table,TRUE,2025-01-27 01:23:00,TX,web_portal,read,68,TRUE,FALSE
+301,1056,Customer Service,maintenance_logs,FALSE,2025-01-07 21:24:00,FL,web_portal,delete,25,FALSE,FALSE
+302,1064,Finance,maintenance_logs,FALSE,2025-01-03 20:01:00,CA,web_portal,export,33,FALSE,FALSE
+303,1084,Pilot,hr_files,TRUE,2025-01-18 03:35:00,NY,web_portal,delete,72,FALSE,TRUE
+304,1068,Customer Service,hr_files,TRUE,2025-01-17 02:58:00,NY,remote_server,write,68,FALSE,TRUE
+305,1031,Customer Service,hr_files,TRUE,2025-01-14 14:02:00,CA,mobile,export,49,FALSE,TRUE
+306,1090,IT,maintenance_logs,FALSE,2025-01-15 10:17:00,FL,mobile,export,53,TRUE,FALSE
+307,1036,HR,hr_files,TRUE,2025-01-25 17:18:00,FL,remote_server,export,88,TRUE,FALSE
+308,1098,IT,flight_logs,FALSE,2025-01-02 21:56:00,NY,laptop,export,32,TRUE,FALSE
+309,1056,Customer Service,maintenance_logs,FALSE,2025-01-10 17:43:00,CA,mobile,export,66,FALSE,FALSE
+310,1017,HR,hr_files,TRUE,2025-01-27 16:58:00,CA,web_portal,read,43,TRUE,FALSE
+311,1085,Finance,payroll_records,TRUE,2025-01-30 00:48:00,CA,laptop,read,43,TRUE,FALSE
+312,1052,Customer Service,maintenance_logs,FALSE,2025-01-05 13:49:00,CA,laptop,write,82,FALSE,FALSE
+313,1052,Pilot,maintenance_logs,FALSE,2025-01-30 14:33:00,CA,mobile,export,74,TRUE,FALSE
+314,1036,HR,customer_table,TRUE,2025-01-30 16:29:00,IL,web_portal,read,74,FALSE,TRUE
+315,1022,Pilot,payroll_records,TRUE,2025-01-02 15:41:00,FL,remote_server,write,89,FALSE,TRUE
+316,1095,Customer Service,customer_table,TRUE,2025-01-01 10:07:00,NY,laptop,export,50,TRUE,FALSE
+317,1036,Pilot,hr_files,TRUE,2025-01-24 20:41:00,FL,web_portal,delete,70,FALSE,TRUE
+318,1034,IT,customer_table,TRUE,2025-01-16 01:11:00,CA,remote_server,export,40,TRUE,FALSE
+319,1091,IT,customer_table,TRUE,2025-01-16 08:12:00,NY,web_portal,write,59,TRUE,FALSE
+320,1078,Pilot,maintenance_logs,FALSE,2025-01-24 10:49:00,NY,laptop,delete,46,TRUE,FALSE
+321,1085,HR,payroll_records,TRUE,2025-01-07 09:35:00,FL,mobile,write,52,TRUE,FALSE
+322,1000,Customer Service,maintenance_logs,FALSE,2025-01-11 17:15:00,FL,mobile,export,67,FALSE,FALSE
+323,1038,Finance,hr_files,TRUE,2025-01-01 12:29:00,NY,mobile,write,25,FALSE,TRUE
+324,1007,HR,maintenance_logs,FALSE,2025-01-14 23:06:00,CA,remote_server,export,112,FALSE,FALSE
+325,1088,HR,flight_logs,FALSE,2025-01-17 17:27:00,IL,web_portal,write,19,FALSE,FALSE
+326,1017,Pilot,payroll_records,TRUE,2025-01-21 16:57:00,IL,mobile,delete,13,FALSE,TRUE
+327,1089,Finance,maintenance_logs,FALSE,2025-01-25 11:06:00,CA,web_portal,read,84,FALSE,FALSE
+328,1067,Pilot,hr_files,TRUE,2025-01-17 11:09:00,TX,laptop,read,73,FALSE,TRUE
+329,1070,Finance,payroll_records,TRUE,2025-01-27 01:32:00,IL,web_portal,write,68,TRUE,FALSE
+330,1041,Finance,maintenance_logs,FALSE,2025-01-06 06:57:00,CA,remote_server,read,68,FALSE,FALSE
+331,1065,Pilot,customer_table,TRUE,2025-01-21 15:16:00,CA,remote_server,delete,49,FALSE,TRUE
+332,1072,HR,hr_files,TRUE,2025-01-22 01:02:00,NY,laptop,delete,23,TRUE,FALSE
+333,1032,HR,payroll_records,TRUE,2025-01-27 07:40:00,TX,laptop,delete,52,TRUE,FALSE
+334,1044,HR,hr_files,TRUE,2025-01-03 17:48:00,TX,remote_server,read,29,TRUE,FALSE
+335,1036,Pilot,payroll_records,TRUE,2025-01-07 03:55:00,FL,mobile,delete,79,FALSE,TRUE
+336,1057,Pilot,maintenance_logs,FALSE,2025-01-04 15:39:00,IL,web_portal,export,45,TRUE,FALSE
+337,1015,IT,hr_files,TRUE,2025-01-18 21:19:00,IL,web_portal,write,25,TRUE,FALSE
+338,1000,HR,flight_logs,FALSE,2025-01-22 01:43:00,IL,remote_server,delete,40,FALSE,FALSE
+339,1029,IT,maintenance_logs,FALSE,2025-01-16 18:05:00,CA,mobile,write,62,TRUE,FALSE
+340,1092,HR,customer_table,TRUE,2025-01-20 01:55:00,IL,laptop,write,33,FALSE,TRUE
+341,1026,HR,customer_table,TRUE,2025-01-28 00:44:00,TX,remote_server,read,25,FALSE,TRUE
+342,1031,HR,maintenance_logs,FALSE,2025-01-20 23:27:00,CA,web_portal,read,57,FALSE,FALSE
+343,1017,Finance,flight_logs,FALSE,2025-01-11 15:46:00,IL,mobile,export,57,FALSE,FALSE
+344,1030,Customer Service,payroll_records,TRUE,2025-01-24 17:20:00,CA,remote_server,export,34,FALSE,TRUE
+345,1035,HR,hr_files,TRUE,2025-01-27 22:15:00,CA,remote_server,delete,35,TRUE,FALSE
+346,1006,Customer Service,maintenance_logs,FALSE,2025-01-24 20:51:00,NY,remote_server,delete,56,FALSE,FALSE
+347,1019,Customer Service,maintenance_logs,FALSE,2025-01-09 08:50:00,IL,remote_server,write,6,FALSE,FALSE
+348,1028,Customer Service,payroll_records,TRUE,2025-01-22 01:44:00,TX,remote_server,delete,7,FALSE,TRUE
+349,1071,Finance,payroll_records,TRUE,2025-01-18 16:15:00,CA,mobile,write,28,TRUE,FALSE
+350,1042,HR,maintenance_logs,FALSE,2025-01-17 21:18:00,TX,web_portal,read,43,FALSE,FALSE
+351,1034,Pilot,hr_files,TRUE,2025-01-28 10:33:00,TX,laptop,write,59,FALSE,TRUE
+352,1097,Finance,hr_files,TRUE,2025-01-10 21:02:00,FL,web_portal,export,94,FALSE,TRUE
+353,1038,HR,payroll_records,TRUE,2025-01-09 15:33:00,TX,remote_server,write,75,TRUE,FALSE
+354,1089,Finance,payroll_records,TRUE,2025-01-19 01:13:00,CA,mobile,export,45,TRUE,FALSE
+355,1048,Pilot,hr_files,TRUE,2025-01-30 12:34:00,NY,mobile,export,49,FALSE,TRUE
+356,1046,Finance,maintenance_logs,FALSE,2025-01-22 05:00:00,TX,remote_server,export,19,FALSE,FALSE
+357,1026,Customer Service,flight_logs,FALSE,2025-01-19 20:07:00,TX,web_portal,write,49,TRUE,FALSE
+358,1002,Customer Service,hr_files,TRUE,2025-01-27 13:55:00,IL,remote_server,export,41,FALSE,TRUE
+359,1019,IT,flight_logs,FALSE,2025-01-11 11:14:00,FL,web_portal,delete,59,TRUE,FALSE
+360,1070,Customer Service,flight_logs,FALSE,2025-01-23 05:42:00,FL,remote_server,write,25,TRUE,FALSE
+361,1093,Customer Service,payroll_records,TRUE,2025-01-07 08:52:00,IL,remote_server,write,65,FALSE,TRUE
+362,1069,HR,hr_files,TRUE,2025-01-02 12:56:00,TX,laptop,read,95,TRUE,FALSE
+363,1052,IT,payroll_records,TRUE,2025-01-04 02:14:00,CA,laptop,write,46,FALSE,TRUE
+364,1064,Pilot,flight_logs,FALSE,2025-01-03 18:01:00,IL,remote_server,delete,62,TRUE,FALSE
+365,1002,HR,hr_files,TRUE,2025-01-26 02:32:00,FL,laptop,read,70,TRUE,FALSE
+366,1067,Customer Service,hr_files,TRUE,2025-01-14 01:08:00,TX,remote_server,write,37,FALSE,TRUE
+367,1013,HR,hr_files,TRUE,2025-01-07 18:38:00,CA,web_portal,export,56,TRUE,FALSE
+368,1045,Customer Service,maintenance_logs,FALSE,2025-01-04 14:18:00,NY,remote_server,delete,50,FALSE,FALSE
+369,1072,IT,payroll_records,TRUE,2025-01-14 15:39:00,TX,laptop,read,52,FALSE,TRUE
+370,1051,Pilot,maintenance_logs,FALSE,2025-01-26 03:41:00,FL,laptop,read,26,TRUE,FALSE
+371,1089,IT,customer_table,TRUE,2025-01-23 17:58:00,FL,mobile,read,50,TRUE,FALSE
+372,1067,HR,payroll_records,TRUE,2025-01-10 14:55:00,IL,remote_server,export,64,TRUE,FALSE
+373,1005,HR,flight_logs,FALSE,2025-01-25 17:08:00,IL,laptop,write,93,FALSE,FALSE
+374,1040,HR,payroll_records,TRUE,2025-01-27 17:11:00,CA,remote_server,read,78,TRUE,FALSE
+375,1038,IT,hr_files,TRUE,2025-01-11 22:39:00,IL,remote_server,export,114,TRUE,FALSE
+376,1049,IT,customer_table,TRUE,2025-01-23 18:59:00,NY,laptop,read,26,TRUE,FALSE
+377,1055,IT,customer_table,TRUE,2025-01-16 12:01:00,IL,remote_server,export,76,TRUE,FALSE
+378,1003,Customer Service,maintenance_logs,FALSE,2025-01-23 07:52:00,CA,mobile,delete,55,FALSE,FALSE
+379,1055,IT,hr_files,TRUE,2025-01-18 07:08:00,TX,mobile,write,115,TRUE,FALSE
+380,1091,HR,customer_table,TRUE,2025-01-13 04:41:00,CA,remote_server,write,25,FALSE,TRUE
+381,1094,Pilot,flight_logs,FALSE,2025-01-17 09:58:00,TX,laptop,read,24,TRUE,FALSE
+382,1039,Pilot,flight_logs,FALSE,2025-01-13 06:39:00,TX,web_portal,read,32,TRUE,FALSE
+383,1023,Pilot,maintenance_logs,FALSE,2025-01-26 08:22:00,IL,remote_server,read,13,TRUE,FALSE
+384,1003,HR,flight_logs,FALSE,2025-01-26 05:21:00,TX,mobile,delete,34,FALSE,FALSE
+385,1001,Customer Service,maintenance_logs,FALSE,2025-01-18 15:34:00,TX,web_portal,write,27,FALSE,FALSE
+386,1087,Pilot,payroll_records,TRUE,2025-01-07 07:39:00,NY,mobile,export,54,FALSE,TRUE
+387,1063,IT,customer_table,TRUE,2025-01-08 14:38:00,FL,mobile,delete,60,TRUE,FALSE
+388,1038,Pilot,customer_table,TRUE,2025-01-17 10:26:00,NY,web_portal,delete,106,FALSE,TRUE
+389,1076,Finance,payroll_records,TRUE,2025-01-21 20:06:00,TX,web_portal,export,78,TRUE,FALSE
+390,1000,Pilot,flight_logs,FALSE,2025-01-29 05:24:00,FL,mobile,delete,32,TRUE,FALSE
+391,1042,Pilot,hr_files,TRUE,2025-01-07 04:41:00,NY,mobile,write,23,FALSE,TRUE
+392,1061,Customer Service,payroll_records,TRUE,2025-01-19 02:59:00,NY,mobile,delete,64,FALSE,TRUE
+393,1073,IT,flight_logs,FALSE,2025-01-18 02:45:00,NY,remote_server,export,10,TRUE,FALSE
+394,1014,Finance,payroll_records,TRUE,2025-01-27 22:52:00,IL,web_portal,read,104,TRUE,FALSE
+395,1093,Pilot,payroll_records,TRUE,2025-01-20 22:54:00,NY,laptop,delete,85,FALSE,TRUE
+396,1086,Pilot,payroll_records,TRUE,2025-01-29 19:46:00,NY,web_portal,export,35,FALSE,TRUE
+397,1084,IT,maintenance_logs,FALSE,2025-01-18 03:46:00,TX,remote_server,delete,1,TRUE,FALSE
+398,1074,Pilot,hr_files,TRUE,2025-01-24 01:21:00,FL,laptop,export,90,FALSE,TRUE
+399,1089,Finance,hr_files,TRUE,2025-01-30 01:03:00,TX,laptop,write,46,FALSE,TRUE
+400,1084,Customer Service,payroll_records,TRUE,2025-01-30 10:41:00,IL,laptop,delete,87,FALSE,TRUE
+401,1096,Customer Service,maintenance_logs,FALSE,2025-01-05 19:43:00,TX,laptop,export,2,FALSE,FALSE
+402,1028,Finance,hr_files,TRUE,2025-01-26 09:28:00,IL,web_portal,delete,32,FALSE,TRUE
+403,1047,Pilot,maintenance_logs,FALSE,2025-01-27 18:53:00,IL,web_portal,export,50,TRUE,FALSE
+404,1003,Pilot,customer_table,TRUE,2025-01-14 10:41:00,FL,laptop,read,51,FALSE,TRUE
+405,1093,IT,flight_logs,FALSE,2025-01-15 04:40:00,NY,remote_server,write,36,TRUE,FALSE
+406,1066,Pilot,flight_logs,FALSE,2025-01-22 16:05:00,TX,remote_server,delete,68,TRUE,FALSE
+407,1040,HR,flight_logs,FALSE,2025-01-03 00:48:00,TX,laptop,export,17,FALSE,FALSE
+408,1082,HR,payroll_records,TRUE,2025-01-12 02:25:00,IL,web_portal,write,45,TRUE,FALSE
+409,1042,Finance,maintenance_logs,FALSE,2025-01-22 00:41:00,CA,remote_server,write,53,FALSE,FALSE
+410,1023,Pilot,maintenance_logs,FALSE,2025-01-02 07:53:00,IL,web_portal,delete,65,TRUE,FALSE
+411,1075,Pilot,maintenance_logs,FALSE,2025-01-01 04:51:00,CA,web_portal,export,71,TRUE,FALSE
+412,1096,HR,hr_files,TRUE,2025-01-05 15:08:00,IL,web_portal,export,16,TRUE,FALSE
+413,1041,IT,maintenance_logs,FALSE,2025-01-06 04:28:00,NY,remote_server,export,3,TRUE,FALSE
+414,1076,Pilot,hr_files,TRUE,2025-01-18 20:45:00,IL,laptop,export,88,FALSE,TRUE
+415,1045,Pilot,hr_files,TRUE,2025-01-08 20:26:00,NY,laptop,write,59,FALSE,TRUE
+416,1040,HR,payroll_records,TRUE,2025-01-14 21:33:00,TX,web_portal,export,27,TRUE,FALSE
+417,1088,IT,hr_files,TRUE,2025-01-18 16:18:00,FL,web_portal,delete,96,TRUE,FALSE
+418,1054,IT,maintenance_logs,FALSE,2025-01-29 22:08:00,IL,web_portal,write,53,TRUE,FALSE
+419,1062,Customer Service,payroll_records,TRUE,2025-01-09 12:21:00,NY,remote_server,read,85,FALSE,TRUE
+420,1045,HR,maintenance_logs,FALSE,2025-01-07 05:07:00,CA,remote_server,delete,52,FALSE,FALSE
+421,1052,Pilot,maintenance_logs,FALSE,2025-01-21 04:48:00,FL,web_portal,read,111,TRUE,FALSE
+422,1072,HR,payroll_records,TRUE,2025-01-14 07:02:00,TX,mobile,write,102,TRUE,FALSE
+423,1068,Customer Service,payroll_records,TRUE,2025-01-21 19:31:00,IL,remote_server,read,42,FALSE,TRUE
+424,1073,HR,flight_logs,FALSE,2025-01-25 17:13:00,NY,laptop,delete,79,FALSE,FALSE
+425,1069,IT,maintenance_logs,FALSE,2025-01-05 15:51:00,CA,mobile,read,69,TRUE,FALSE
+426,1057,Customer Service,flight_logs,FALSE,2025-01-04 23:00:00,FL,laptop,write,91,TRUE,FALSE
+427,1026,Finance,flight_logs,FALSE,2025-01-28 18:34:00,FL,web_portal,write,21,FALSE,FALSE
+428,1100,IT,payroll_records,TRUE,2025-01-03 16:50:00,IL,mobile,export,70,FALSE,TRUE
+429,1076,Finance,payroll_records,TRUE,2025-01-15 17:30:00,NY,mobile,export,81,TRUE,FALSE
+430,1065,HR,payroll_records,TRUE,2025-01-19 17:34:00,TX,mobile,write,2,TRUE,FALSE
+431,1089,IT,payroll_records,TRUE,2025-01-07 15:44:00,NY,web_portal,delete,14,FALSE,TRUE
+432,1062,IT,hr_files,TRUE,2025-01-29 18:45:00,NY,remote_server,delete,11,TRUE,FALSE
+433,1057,HR,customer_table,TRUE,2025-01-19 08:01:00,IL,mobile,export,41,FALSE,TRUE
+434,1058,Pilot,flight_logs,FALSE,2025-01-27 11:39:00,TX,laptop,delete,71,TRUE,FALSE
+435,1081,Customer Service,customer_table,TRUE,2025-01-25 07:44:00,FL,web_portal,delete,95,TRUE,FALSE
+436,1027,Pilot,flight_logs,FALSE,2025-01-15 16:39:00,NY,mobile,write,52,TRUE,FALSE
+437,1072,Pilot,flight_logs,FALSE,2025-01-03 04:52:00,TX,laptop,delete,98,TRUE,FALSE
+438,1002,HR,payroll_records,TRUE,2025-01-21 02:00:00,FL,laptop,delete,8,TRUE,FALSE
+439,1025,IT,flight_logs,FALSE,2025-01-08 05:38:00,NY,laptop,export,1,TRUE,FALSE
+440,1032,HR,flight_logs,FALSE,2025-01-30 12:47:00,CA,laptop,delete,48,FALSE,FALSE
+441,1080,Customer Service,payroll_records,TRUE,2025-01-20 12:50:00,TX,laptop,read,61,FALSE,TRUE
+442,1027,Pilot,customer_table,TRUE,2025-01-07 00:56:00,IL,web_portal,delete,49,FALSE,TRUE
+443,1001,HR,flight_logs,FALSE,2025-01-06 11:43:00,FL,web_portal,delete,12,FALSE,FALSE
+444,1009,IT,maintenance_logs,FALSE,2025-01-05 01:34:00,TX,laptop,export,47,TRUE,FALSE
+445,1047,Customer Service,payroll_records,TRUE,2025-01-18 10:02:00,CA,web_portal,read,10,FALSE,TRUE
+446,1067,Finance,customer_table,TRUE,2025-01-28 18:37:00,CA,remote_server,export,70,TRUE,FALSE
+447,1092,IT,payroll_records,TRUE,2025-01-19 17:41:00,IL,remote_server,write,60,FALSE,TRUE
+448,1011,HR,payroll_records,TRUE,2025-01-06 14:31:00,IL,remote_server,export,21,TRUE,FALSE
+449,1054,Customer Service,payroll_records,TRUE,2025-01-12 06:38:00,NY,laptop,write,34,FALSE,TRUE
+450,1070,Finance,hr_files,TRUE,2025-01-28 15:39:00,NY,laptop,export,18,FALSE,TRUE
+451,1026,Finance,hr_files,TRUE,2025-01-24 04:32:00,CA,remote_server,export,48,FALSE,TRUE
+452,1082,HR,payroll_records,TRUE,2025-01-23 12:32:00,FL,laptop,write,78,TRUE,FALSE
+453,1063,Finance,customer_table,TRUE,2025-01-25 01:01:00,TX,mobile,export,20,TRUE,FALSE
+454,1016,Pilot,hr_files,TRUE,2025-01-20 03:41:00,NY,web_portal,delete,65,FALSE,TRUE
+455,1098,HR,customer_table,TRUE,2025-01-27 17:33:00,TX,laptop,export,34,FALSE,TRUE
+456,1027,HR,customer_table,TRUE,2025-01-19 02:41:00,IL,mobile,delete,26,FALSE,TRUE
+457,1054,Pilot,customer_table,TRUE,2025-01-30 03:38:00,IL,web_portal,export,46,FALSE,TRUE
+458,1010,Customer Service,customer_table,TRUE,2025-01-24 06:28:00,CA,web_portal,export,18,TRUE,FALSE
+459,1050,Finance,customer_table,TRUE,2025-01-15 02:47:00,FL,web_portal,read,33,TRUE,FALSE
+460,1031,HR,maintenance_logs,FALSE,2025-01-06 06:41:00,FL,laptop,export,14,FALSE,FALSE
+461,1085,IT,customer_table,TRUE,2025-01-01 13:50:00,CA,laptop,write,108,TRUE,FALSE
+462,1063,Customer Service,hr_files,TRUE,2025-01-24 12:56:00,NY,web_portal,export,51,FALSE,TRUE
+463,1016,Customer Service,customer_table,TRUE,2025-01-02 08:03:00,NY,remote_server,export,29,TRUE,FALSE
+464,1067,HR,flight_logs,FALSE,2025-01-27 05:51:00,TX,remote_server,delete,56,FALSE,FALSE
+465,1065,Customer Service,customer_table,TRUE,2025-01-23 17:42:00,IL,web_portal,export,46,TRUE,FALSE
+466,1020,Customer Service,customer_table,TRUE,2025-01-27 02:51:00,TX,web_portal,read,43,TRUE,FALSE
+467,1005,HR,payroll_records,TRUE,2025-01-03 02:13:00,FL,mobile,delete,68,TRUE,FALSE
+468,1019,IT,customer_table,TRUE,2025-01-26 03:52:00,FL,web_portal,export,72,TRUE,FALSE
+469,1031,Pilot,flight_logs,FALSE,2025-01-13 08:17:00,TX,mobile,read,34,TRUE,FALSE
+470,1064,HR,payroll_records,TRUE,2025-01-11 03:46:00,IL,laptop,delete,32,TRUE,FALSE
+471,1008,Pilot,flight_logs,FALSE,2025-01-15 03:21:00,NY,laptop,delete,41,TRUE,FALSE
+472,1001,Customer Service,payroll_records,TRUE,2025-01-14 06:29:00,IL,mobile,write,19,FALSE,TRUE
+473,1059,Customer Service,hr_files,TRUE,2025-01-23 10:52:00,CA,web_portal,write,4,FALSE,TRUE
+474,1000,Pilot,customer_table,TRUE,2025-01-11 14:29:00,IL,mobile,read,91,FALSE,TRUE
+475,1042,HR,maintenance_logs,FALSE,2025-01-14 23:53:00,TX,web_portal,write,99,FALSE,FALSE
+476,1053,Pilot,customer_table,TRUE,2025-01-07 11:30:00,NY,laptop,read,42,FALSE,TRUE
+477,1029,Finance,maintenance_logs,FALSE,2025-01-17 22:51:00,FL,laptop,read,67,FALSE,FALSE
+478,1064,IT,maintenance_logs,FALSE,2025-01-04 09:44:00,IL,laptop,delete,59,TRUE,FALSE
+479,1084,IT,payroll_records,TRUE,2025-01-14 06:35:00,NY,mobile,delete,142,FALSE,TRUE
+480,1089,Customer Service,flight_logs,FALSE,2025-01-21 14:31:00,NY,web_portal,read,83,TRUE,FALSE
+481,1025,IT,hr_files,TRUE,2025-01-05 23:01:00,CA,laptop,write,46,TRUE,FALSE
+482,1057,Pilot,flight_logs,FALSE,2025-01-19 12:01:00,TX,mobile,write,21,TRUE,FALSE
+483,1057,Customer Service,maintenance_logs,FALSE,2025-01-13 01:27:00,TX,laptop,write,1,FALSE,FALSE
+484,1087,Customer Service,hr_files,TRUE,2025-01-02 20:03:00,CA,mobile,write,56,FALSE,TRUE
+485,1011,IT,flight_logs,FALSE,2025-01-19 00:48:00,IL,laptop,export,27,TRUE,FALSE
+486,1033,IT,customer_table,TRUE,2025-01-19 09:42:00,FL,web_portal,read,7,TRUE,FALSE
+487,1059,HR,payroll_records,TRUE,2025-01-06 12:39:00,TX,laptop,write,30,TRUE,FALSE
+488,1016,IT,maintenance_logs,FALSE,2025-01-17 22:35:00,TX,mobile,read,17,TRUE,FALSE
+489,1002,HR,payroll_records,TRUE,2025-01-30 09:35:00,FL,web_portal,read,100,TRUE,FALSE
+490,1042,HR,customer_table,TRUE,2025-01-21 23:31:00,TX,web_portal,delete,76,FALSE,TRUE
+491,1092,Pilot,maintenance_logs,FALSE,2025-01-02 08:12:00,FL,remote_server,write,49,TRUE,FALSE
+492,1045,IT,payroll_records,TRUE,2025-01-13 12:21:00,NY,remote_server,write,94,FALSE,TRUE
+493,1004,Finance,hr_files,TRUE,2025-01-29 01:54:00,CA,mobile,delete,52,FALSE,TRUE
+494,1052,Finance,maintenance_logs,FALSE,2025-01-03 18:36:00,TX,mobile,delete,24,FALSE,FALSE
+495,1017,Pilot,payroll_records,TRUE,2025-01-30 05:56:00,IL,web_portal,read,95,FALSE,TRUE
+496,1048,Customer Service,maintenance_logs,FALSE,2025-01-25 18:45:00,FL,mobile,export,66,FALSE,FALSE
+497,1049,Customer Service,payroll_records,TRUE,2025-01-02 04:28:00,NY,web_portal,read,18,FALSE,TRUE
+498,1099,Customer Service,customer_table,TRUE,2025-01-22 11:12:00,IL,mobile,write,44,TRUE,FALSE
+499,1020,HR,payroll_records,TRUE,2025-01-30 21:28:00,CA,mobile,read,23,TRUE,FALSE
+500,1097,IT,hr_files,TRUE,2025-01-18 16:15:00,NY,web_portal,write,8,TRUE,FALSE
