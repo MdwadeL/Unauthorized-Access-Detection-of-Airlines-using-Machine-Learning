@@ -499,4 +499,5 @@ event_id,user_id,user_role,resource_accessed,resource_sensitivity,timestamp,loca
 497,1049,Customer Service,payroll_records,1,2025-01-02 04:28:00,NY,web_portal,read,18,0,1
 498,1099,Customer Service,customer_table,1,2025-01-22 11:12:00,IL,mobile,write,44,1,0
 499,1020,HR,payroll_records,1,2025-01-30 21:28:00,CA,mobile,read,23,1,0
+
 500,1097,IT,hr_files,1,2025-01-18 16:15:00,NY,web_portal,write,8,1,0
