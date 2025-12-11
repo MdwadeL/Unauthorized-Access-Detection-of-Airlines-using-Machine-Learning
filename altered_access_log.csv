@@ -1,5 +1,4 @@
 altered_access_log
-access_monitoring_data,,,,,,,,,,,
 event_id,user_id,user_role,resource_accessed,resource_sensitivity,access_timestamp,location,device_type,access_type,records_viewed,is_authorized,is_privacy_violation
 1,1081,HR,customer_table,TRUE,2025-01-13 12:24:00,CA,web_portal,write,64,FALSE,TRUE
 2,1094,HR,hr_files,TRUE,2025-01-04 22:57:00,IL,remote_server,read,45,TRUE,FALSE
@@ -500,4 +499,5 @@ event_id,user_id,user_role,resource_accessed,resource_sensitivity,access_timesta
 497,1049,Customer Service,payroll_records,TRUE,2025-01-02 04:28:00,NY,web_portal,read,18,FALSE,TRUE
 498,1099,Customer Service,customer_table,TRUE,2025-01-22 11:12:00,IL,mobile,write,44,TRUE,FALSE
 499,1020,HR,payroll_records,TRUE,2025-01-30 21:28:00,CA,mobile,read,23,TRUE,FALSE
+
 500,1097,IT,hr_files,TRUE,2025-01-18 16:15:00,NY,web_portal,write,8,TRUE,FALSE
