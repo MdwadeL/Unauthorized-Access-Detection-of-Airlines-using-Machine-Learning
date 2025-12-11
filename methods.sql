@@ -252,6 +252,7 @@ select
     a.device_type,
     a.access_timestamp,
     a.records_viewed,
+    a.is_privacy_violation,
 
     /* Access Velocity Features */
     AV1.AV1isSpike,
