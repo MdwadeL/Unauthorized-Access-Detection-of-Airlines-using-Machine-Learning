@@ -2,7 +2,7 @@
 UNIFIED FEATURE TABLE FOR ACCESS ANOMALY DETECTION
     - Access Velocity (AV1–AV4)
     - Role Violation (RV1)
-    - LOCATION/Device-Based (LD1, LD2)
+    - Location/Device-Based (LD1, LD2)
     - Time-Based (TB1)
 */
 
